@@ -21,8 +21,33 @@ This is a simple hobby project which I was really curious about to implement. Th
 
 ### Libraries Used
 
-* [Pyrogram](https://github.com/pyrogram/pyrogram "Pyrogram")
-* [Google Client API](https://github.com/googleapis/google-api-python-client "Google Client API")
+<details>
+           <summary>Pyrogram</summary>
+           <p><a href="https://github.com/pyrogram/pyrogram">Pyrogram</a> is used to connect the bot with telegram servers.</p>
+</details>
+<details>
+           <summary>Google Client API</summary>
+           <p><a href="https://github.com/googleapis/google-api-python-client">Google Client API</a> is used to connect the bot with Google and then with Youtube.</p>
+</details>
+
+**Environment Variables**
+
+* `BOT_TOKEN`(Required) - Get your bot token from [Bot Father](https://tx.me/BotFather "Bot Father").
+* `SESSION_NAME`(optional) - Your bot's username.
+* `API_ID`(Required) - Your telegram api id, get from [Manage Apps](https://my.telegram.org).
+* `API_HASH`(Required) - Your telegram api hash, get from [Manage Apps](https://my.telegram.org).
+* `CLIENT_ID`(Required) - Your google client id.
+* `CLIENT_SECRET`(Required) - Your google client secret.
+* `BOT_OWNER`(Required) - Telegram id of bot owner.
+* `AUTH_USERS`(optional) - Telegram id's of authorised users, separated by `,`.
+* `VIDEO_DESCRIPTION`(optional) - Any default description to be aded to the video.
+* `VIDEO_CATEGORY`(optional) - YouTube's video category id. If not specified or specified id is invalid, category id will be selected randomly.
+* `VIDEO_TITLE_PREFIX`(optional) - Any prefix to be added to the video's title.
+* `VIDEO_TITLE_SUFFIX`(optional) - Any suffix to be added to the video's title.
+* `UPLOAD_MODE`(optional) - The video's privacy status. Valid values for this property are: `private`, `public`, `unlisted`.
+* `DEBUG` (optional) - Whether to set logging level to DEBUG. If set logging will be set to DEBUG level, else INFO level.
+
+
 
 ### Setup
 
@@ -41,22 +66,6 @@ $ source venv/bin/activate
 
 ```
 
-**Environment Variables**
-
-* `BOT_TOKEN`(Required) - Get your bot token from [Bot Father](https://tx.me/BotFather "Bot Father").
-* `SESSION_NAME`(optional) - Your bot's username.
-* `API_ID`(Required) - Your telegram api id, get from [Manage Apps](https://my.telegram.org).
-* `API_HASH`(Required) - Your telegram api hash, get from [Manage Apps](https://my.telegram.org).
-* `CLIENT_ID`(Required) - Your google client id.
-* `CLIENT_SECRET`(Required) - Your google client secret.
-* `BOT_OWNER`(Required) - Telegram id of bot owner.
-* `AUTH_USERS`(optional) - Telegram id's of authorised users, separated by `,`.
-* `VIDEO_DESCRIPTION`(optional) - Any default description to be aded to the video.
-* `VIDEO_CATEGORY`(optional) - YouTube's video category id. If not specified or specified id is invalid, category id will be selected randomly.
-* `VIDEO_TITLE_PREFIX`(optional) - Any prefix to be added to the video's title.
-* `VIDEO_TITLE_SUFFIX`(optional) - Any suffix to be added to the video's title.
-* `UPLOAD_MODE`(optional) - The video's privacy status. Valid values for this property are: `private`, `public`, `unlisted`.
-* `DEBUG` (optional) - Whether to set logging level to DEBUG. If set logging will be set to DEBUG level, else INFO level.
 
 **Getting your `CLIENT_ID` and `CLIENT_SECRET`**
 
